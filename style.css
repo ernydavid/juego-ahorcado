@@ -32,7 +32,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 4px;
 }
 
 .tablero {
@@ -47,7 +47,7 @@ body {
   width: 80px;
   height: 80px;
   border-radius: 10px;
-  background-color: #f6f6f6;
+  background-color: #E6E6f6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,6 +58,43 @@ body {
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 24px;
+  display: inline;
+  line-height: .5em;
+}
+
+.gameBody {
+  flex-grow: 1;
+}
+
+.tablaIntentos {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contenedorIntentos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+}
+
+.intentos {
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  border-radius: 5px;
+  background-color: #555555;
+  color: whitesmoke;
+  display: grid;
+  place-content: center center;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .startBtn {
@@ -81,4 +118,70 @@ body {
 
 .hide {
   display: none;
+}
+
+.cuerpo {
+  width: 100px;
+  height: 200px;
+  position: relative;
+  background-color: #666666;
+}
+
+.cuerpo div {
+  background-color: #444444;
+}
+
+.cabeza {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.torso {
+  width: 10px;
+  height: 60px;
+  position: absolute;
+  top: 48px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.brazoIzq {
+  width: 30px;
+  height: 10px;
+  position: absolute;
+  top: 65px;
+  left: 20px;
+  transform: rotate(-30deg);
+}
+
+.brazoDer {
+  width: 30px;
+  height: 10px;
+  transform: rotate(30deg);
+  position: absolute;
+  top: 65px;
+  left: 47px;
+}
+
+.piernaIzq {
+  width: 10px;
+  height: 50px;
+  position: absolute;
+  top: 100px;
+  left: 38px;
+  transform: translateX(-50%) rotate(30deg);
+}
+
+.piernaDer {
+  width: 10px;
+  height: 50px;
+  position: absolute;
+  top: 100px;
+  left: 60px;
+  transform: translateX(-50%) rotate(-30deg);
 }
